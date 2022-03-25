@@ -1,0 +1,313 @@
+/*----------Importer la police qu on desire sur google font---------*/
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400&display=swap");
+
+/*----------mettre tjrs ceci en css avant de commncer son css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+header nav {
+    display: none;
+}
+/* icon hamburger  (debut de code )*/
+.burger {
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+.burger span {
+    width: 100%;
+    height: 4px;
+    background: #000;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger span::before,
+.burger span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    border-radius: 20px;
+}
+.burger span::before {
+    top: 10px;
+}
+.burger span::after {
+    bottom: 10px;
+}
+
+/*------------icon hamburger  (fin de code )----------*/
+
+/* ----------------------------------------------HEADER -----------------------*/
+html {
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+/* ------------------------------------------1ere BLOC----------------------------*/
+.intro {
+    margin: 10px;
+}
+
+.caract-image {
+    margin-left: -50px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.caract {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.caract-groupe {
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+}
+.prix:nth-of-type(1),
+.prix:nth-of-type(2) {
+    padding-bottom: 50px;
+}
+
+.presentation-titre {
+    margin: 3px;
+    padding: 10px;
+}
+.presentation-texte {
+    margin: 3px;
+    padding: 0px 10px 30px 10px;
+}
+
+/* -----------2eme BLOC -------------- */
+
+.lambo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 217, 224);
+    margin: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.urus-jaune,
+.urus-rouge,
+.urus-vert {
+    object-fit: cover;
+    position: relative;
+}
+.urus-jaune {
+    width: 160px;
+    height: 160px;
+    border-radius: 40px;
+    margin: -20px 20px 20px 40px;
+}
+.urus-rouge {
+    height: 300px;
+    border-radius: 40px;
+    margin: -95px 30px -30px 140px;
+    aspect-ratio: 3/4; /* calcul des tailles automatiques et pour d'autres fonctions de mise en page. */
+    z-index: 1;
+}
+.urus-vert {
+    width: 215px;
+    height: 250px;
+    border-radius: 40px;
+    margin: -156px 20px 20px 12px;
+}
+
+.lambo-titre {
+    padding: 10px;
+}
+.lambo-texte {
+    margin: 20px 10px;
+}
+
+/* ---------------------------- 3eme BLOC -------------------------------*/
+#showroom-modele {
+    margin: 40px;
+    text-align: center;
+}
+#showroom-modele img {
+    width: 80%;
+    aspect-ratio: 1/1; /* calcul des tailles automatiques et pour d'autres fonctions de mise en page. */
+    object-fit: cover; /* s'adapter à son conteneur en utilisant sa largeur et sa hauteur.*/
+}
+#showroom-titre {
+    text-transform: uppercase; /* mets les lettre en majuscule*/
+}
+#showroom-texte {
+    margin: 10px;
+}
+
+.showroom-lambo {
+    width: 500px;
+    height: 340;
+    border-radius: 40px;
+}
+.showroom-urus {
+    width: 500px;
+    height: 340;
+    border-radius: 40px;
+}
+
+.showroom-porsche {
+    width: 500px;
+    height: 340;
+    border-radius: 40px;
+}
+.showroom-rouge {
+    width: 500px;
+    height: 340;
+    border-radius: 40px;
+}
+.showroom-lien {
+    /* bouton di lien du caroussel*/
+    width: 70px;
+    height: 15px;
+    padding: 10px 15px;
+    background-color: rgb(95, 95, 102);
+    color: antiquewhite;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ------------------------------4eme BLOC --------------------------------*/
+/*
+.news {
+}
+*/
+#news-arrivage1 {
+    background-image: url(./audi_q3_sportback.jpg);
+    width: 100%;
+    aspect-ratio: 1/1; /* calcul des tailles automatiques et pour d'autres fonctions de mise en page. */
+    object-fit: cover;
+    margin: 20px 10px;
+    padding: 40px 10px 10px 40px;
+
+    background-repeat: no-repeat;
+}
+
+#news-arrivage2 {
+    background-image: url(./lambo.jpeg);
+    width: 100%;
+    aspect-ratio: 1/1; /* calcul des tailles automatiques et pour d'autres fonctions de mise en page. */
+    object-fit: cover;
+    color: antiquewhite;
+    margin: 20px 10px;
+    padding: 40px 10px 10px 40px;
+    background-repeat: no-repeat;
+}
+/*
+#news-titre {
+}
+#news-text {
+}
+*/
+/*----------------------------------- FOOTER -------------------------------*/
+.footer {
+    margin: 10px;
+    margin-top: 40px;
+    text-align: center;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 217, 224);
+}
+
+.contact-titre {
+    display: flex;
+    flex-direction: column;
+}
+.facebook,
+.instagram,
+.linkedin {
+    text-decoration: none;
+}
+.facebook img,
+.instagram img,
+.linkedin img {
+    width: 20px;
+    height: 20px;
+}
+.contact-annee {
+    display: flex;
+}
+/*
+.contact-facebook {
+}
+.contact-insta {
+}
+.contact-link {
+}
+*/
+/*****  le code responsive pour adapter l ecran par rapport au support (mobile, tablette ou ordi) *****
+******* donc du portable à l'ecran je dois mettre min-width  et au contraire mettre  max-width  *******/
+
+@media screen and (min-width: 700px) {
+    body {
+        margin: auto;
+        width: 80%;
+    }
+    .burger {
+        display: none;
+    }
+    header nav {
+        display: flex;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    li {
+        margin: 10px;
+    }
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    a {
+        padding: 10px 10px;
+        background-color: rgb(95, 95, 102);
+        color: antiquewhite;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .presentation-texte {
+        margin: 3px;
+        padding: 0px 60px 30px 10px;
+    }
+    .caract-image {
+        margin-left: -50px;
+        margin-right: 50px;
+        border-radius: 30px;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .lambo {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(217, 217, 224);
+        margin: 10px;
+        margin-top: 50px;
+        margin-top: 40px;
+        border-radius: 20px;
+    } /*ceci est la fermeture de la balise --> @media screen and (min-width: 700px) {*/
+}
