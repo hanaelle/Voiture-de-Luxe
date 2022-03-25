@@ -2,7 +2,8 @@
 Projet de site en version mobile
 
 ### Explication du site
-C'est un site présentant plusieurs modèles de voitures (Audi, Lambo, Porsche), leurs caractéristiques. 
+C'est un site présentant plusieurs modèles de voitures (Audi, Lambo, Porsche), leurs caractéristiques. <br>
+Voici le déploiement: [ici](https://hanaelle.github.io/Voiture-de-Luxe/)
 
 ### Contexte
 Ce projet à été réalisé dans le cadre de la formation [Digital Sprint de BeCode](https://becode.org/learn/digital-sprint/). <br>
